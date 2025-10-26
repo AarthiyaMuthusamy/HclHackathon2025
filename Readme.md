@@ -146,7 +146,7 @@ Users(1) ---- (N) accounts
 
 
 
-Testing
+Testing:
 
 Unit tests per service with pytest. Focus on: validation, balance arithmetic, ledger consistency.
 
