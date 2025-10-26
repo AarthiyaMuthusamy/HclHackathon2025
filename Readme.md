@@ -12,7 +12,7 @@ Features:
 
 3) Money Transfer — internal transfers between accounts, transfer validation, balance updates.
 
-4) Audit Logging — immutable, tamper-evident logs for all critical actions and API calls.
+4) Audit Logging - Any critical actions
 
 
 Architecture:
@@ -29,11 +29,17 @@ Application Overview:
 
 
 Tech Stack:
+
 Frontend : React + Vite
+
 Backend: Python FastAPI, Security (JWT).
+
 Database: PostgreSQL.
+
 API Docs: Swagger API documentation.
+
 Testing: pytest
+
 CI/CD: GitHub Actions
 
 
@@ -143,9 +149,23 @@ Append-only table audit_logs(id, source, event_type, payload JSONB, user_id, ref
 
 
 
+Database Models:
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
+
 Databse ER: 
 
-Users(1) ---- (N) accounts
+users (1) -> (N) accounts
+
+users (1) -> (N) kyc_documents
+
+accounts (1) -> (N) ledgers
+
+transfers links two accounts (from_account, to_account)
+
+audit_logs can reference any other service entity by reference_id
 
 
 
