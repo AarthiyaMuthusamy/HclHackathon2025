@@ -148,6 +148,12 @@ Storage:
 Append-only table audit_logs(id, source, event_type, payload JSONB, user_id, reference_id, created_at)
 
 
+Security Features:
+JWT based Authentication for login
+Password hashing with bcrypt
+role-based access control
+Input Validation (validate input given from users)
+
 
 Database Models:
 
