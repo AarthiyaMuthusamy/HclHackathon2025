@@ -150,6 +150,7 @@ Append-only table audit_logs(id, source, event_type, payload JSONB, user_id, ref
 
 
 Database Models:
+
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 ![alt text](image-3.png)
