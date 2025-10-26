@@ -15,6 +15,9 @@ Features:
 4) Audit Logging — immutable, tamper-evident logs for all critical actions and API calls.
 
 
+Architecture:
+![alt text](image.png)
+
 
 Application Overview:
 
